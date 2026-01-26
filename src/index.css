@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-950 text-cream-200 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    @apply bg-amber-600/40 text-cream-100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-500;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .section-label {
+    @apply text-amber-500 text-sm font-sans uppercase tracking-[0.2em] font-medium mb-4;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-cream-100 mb-6;
+  }
+
+  .section-description {
+    @apply text-cream-300 text-lg max-w-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-amber-600 hover:bg-amber-500 text-dark-900 font-semibold rounded-sm transition-all duration-300 hover:shadow-glow;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 border border-amber-500/50 text-amber-500 hover:bg-amber-500/10 font-semibold rounded-sm transition-all duration-300;
+  }
+
+  .card-dark {
+    @apply bg-dark-800/50 border border-dark-600/30 rounded-sm backdrop-blur-sm transition-all duration-300 hover:border-amber-500/30 hover:shadow-glow;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent;
+  }
+
+  .gold-line {
+    @apply w-16 h-0.5 bg-gradient-to-r from-amber-500 to-amber-600;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+  }
+}
