@@ -38,7 +38,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/hero/home-hero.jpg"
+            src="/new-images/common-areas/new-hero.jpeg"
             alt="Himalayan mountains"
             className="w-full h-full object-cover"
           />
