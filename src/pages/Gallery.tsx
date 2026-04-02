@@ -37,7 +37,7 @@ const galleryImages = [
   { src: '/images/experiences/rooftop-yoga.jpeg', category: 'property', alt: 'Rooftop yoga' },
   { src: '/images/treks/kheerganga.png', category: 'treks', alt: 'Kheerganga trek' },
   { src: '/images/treks/pinparvati.jpg', category: 'treks', alt: 'Pin Parvati pass' },
-  { src: '/images/treks/sarpass.png', category: 'treks', alt: 'Sar Pass trek' },
+  { src: '/images/treks/sarpass.jpg', category: 'treks', alt: 'Sar Pass trek' },
   { src: '/images/treks/pinbhaba.png', category: 'treks', alt: 'Pin Bhaba pass' },
   { src: '/images/treks/shrikhand.jpg', category: 'treks', alt: 'Shrikhand Mahadev' },
   { src: '/images/treks/devaropa.webp', category: 'treks', alt: 'Devaropa trek' },

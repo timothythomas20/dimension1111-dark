@@ -32,7 +32,7 @@ export default function Adventures() {
 
   const trekImages: { [key: string]: string } = {
     kheerganga: '/images/treks/kheerganga.png',
-    sarpass: '/images/treks/sarpass.png',
+    sarpass: '/images/treks/sarpass.jpg',
     devaropa: '/images/treks/devaropa.webp',
     pinbhaba: '/images/treks/pinbhaba.png',
     shrikhand: '/images/treks/shrikhand.jpg',
