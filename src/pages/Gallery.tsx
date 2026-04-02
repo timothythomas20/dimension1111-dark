@@ -6,6 +6,18 @@ import SectionHeader from '../components/ui/SectionHeader';
 import AnimatedSection from '../components/ui/AnimatedSection';
 
 const galleryImages = [
+  { src: '/new-images/common-areas/new-hero.jpeg', category: 'property', alt: 'Property view' },
+  { src: '/new-images/common-areas/WhatsApp_Image_2026-02-27_at_09.29.15_(1).jpeg', category: 'property', alt: 'Common area' },
+  { src: '/new-images/common-areas/WhatsApp_Image_2026-02-27_at_09.29.16.jpeg', category: 'property', alt: 'Common area' },
+  { src: '/new-images/common-areas/WhatsApp_Image_2026-02-27_at_09.30.34_(1).jpeg', category: 'property', alt: 'Common area' },
+  { src: '/new-images/common-areas/WhatsApp_Image_2026-02-27_at_09.30.35.jpeg', category: 'property', alt: 'Common area' },
+  { src: '/new-images/common-areas/WhatsApp_Image_2026-02-27_at_09.30.36.jpeg', category: 'property', alt: 'Common area' },
+  { src: '/new-images/common-areas/WhatsApp_Image_2026-02-27_at_09.30.53_(1).jpeg', category: 'property', alt: 'Common area' },
+  { src: '/new-images/lounge-new/l1.jpeg', category: 'lounge', alt: 'Lounge area' },
+  { src: '/new-images/lounge-new/l2.jpeg', category: 'lounge', alt: 'Lounge area' },
+  { src: '/new-images/lounge-new/l3.jpeg', category: 'lounge', alt: 'Lounge area' },
+  { src: '/new-images/lounge-new/l4.jpeg', category: 'lounge', alt: 'Lounge area' },
+  { src: '/new-images/lounge-new/l5.jpeg', category: 'lounge', alt: 'Lounge area' },
   { src: '/images/views/valley-panorama.jpeg', category: 'views', alt: 'Valley panorama' },
   { src: '/images/rooms/deluxe-room.jpeg', category: 'rooms', alt: 'Deluxe room interior' },
   { src: '/images/experiences/bonfire.jpeg', category: 'bonfire', alt: 'Evening bonfire' },
@@ -49,7 +61,7 @@ const galleryImages = [
   { src: '/images/past-guests/whatsapp_image_2026-01-19_at_14.06.17_(1).jpeg', category: 'guests', alt: 'Guest moment' },
 ];
 
-type Category = 'all' | 'rooms' | 'cafe' | 'views' | 'treks' | 'bonfire' | 'property' | 'guests';
+type Category = 'all' | 'rooms' | 'cafe' | 'views' | 'treks' | 'bonfire' | 'property' | 'guests' | 'lounge';
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
@@ -65,6 +77,7 @@ export default function Gallery() {
     { key: 'all', label: 'All' },
     { key: 'guests', label: 'Guest Moments' },
     { key: 'rooms', label: 'Rooms' },
+    { key: 'lounge', label: 'Lounge' },
     { key: 'cafe', label: 'Cafe' },
     { key: 'views', label: 'Views' },
     { key: 'treks', label: 'Treks' },
