@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import {
   Users, Bed, Mountain, Droplets, Wifi, UtensilsCrossed,
-  Sparkles, ArrowRight, Phone, Check, Info
+  Sparkles, Phone, Check, Info
 } from 'lucide-react';
 import PageHero from '../components/ui/PageHero';
 import SectionHeader from '../components/ui/SectionHeader';
 import AnimatedSection from '../components/ui/AnimatedSection';
+import ImageCarousel from '../components/ui/ImageCarousel';
 import { rooms } from '../data/constants';
 
 export default function Stays() {
@@ -27,7 +28,6 @@ export default function Stays() {
         image="/images/hero/stays-hero.jpeg"
       />
 
-      {/* Accommodation Overview */}
       <section className="section-padding bg-dark-950">
         <div className="section-container">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
@@ -57,7 +57,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Room Types */}
       <section className="section-padding bg-dark-900">
         <div className="section-container">
           <AnimatedSection>
@@ -68,10 +67,9 @@ export default function Stays() {
             />
           </AnimatedSection>
 
-          <div className="space-y-16">
-            {/* Deluxe Room */}
+          <div className="space-y-20">
             <AnimatedSection>
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 <div className="relative h-[400px] lg:h-[500px] rounded-sm overflow-hidden group">
                   <img
                     src={rooms.deluxe.image}
@@ -134,14 +132,17 @@ export default function Stays() {
                   </div>
                 </div>
               </div>
+
+              <div className="mt-8">
+                <p className="text-cream-400 text-sm mb-4 uppercase tracking-wider">Room Gallery</p>
+                <ImageCarousel images={rooms.deluxe.gallery} title="Deluxe Room" />
+              </div>
             </AnimatedSection>
 
-            {/* Divider */}
             <div className="border-t border-dark-700" />
 
-            {/* Family Suite */}
             <AnimatedSection>
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 <div className="order-1 lg:order-2 relative h-[400px] lg:h-[500px] rounded-sm overflow-hidden group">
                   <img
                     src={rooms.suite.image}
@@ -204,12 +205,16 @@ export default function Stays() {
                   </div>
                 </div>
               </div>
+
+              <div className="mt-8">
+                <p className="text-cream-400 text-sm mb-4 uppercase tracking-wider">Suite Gallery</p>
+                <ImageCarousel images={rooms.suite.gallery} title="Family Suite" />
+              </div>
             </AnimatedSection>
           </div>
         </div>
       </section>
 
-      {/* Quick Comparison */}
       <section className="py-12 bg-dark-850 border-y border-dark-700">
         <div className="section-container">
           <div className="overflow-x-auto">
@@ -253,7 +258,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* All Rooms Include */}
       <section className="section-padding bg-dark-950">
         <div className="section-container">
           <AnimatedSection>
@@ -284,7 +288,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Extra Services */}
       <section className="py-12 bg-dark-850 border-y border-dark-700">
         <div className="section-container">
           <AnimatedSection>
@@ -317,7 +320,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Booking Information */}
       <section className="section-padding bg-dark-900">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12">
@@ -376,7 +378,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Policies Quick Reference */}
       <section className="section-padding bg-dark-950">
         <div className="section-container">
           <AnimatedSection>
@@ -412,7 +413,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Room Booking CTA */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img

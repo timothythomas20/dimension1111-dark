@@ -5,7 +5,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/ui/AnimatedSection';
 import SectionHeader from '../components/ui/SectionHeader';
-import { rooms, testimonials, amenities, treks, experiences } from '../data/constants';
+import ImageCarousel from '../components/ui/ImageCarousel';
+import { rooms, testimonials, amenities } from '../data/constants';
 
 export default function Home() {
   const openWhatsApp = (message: string) => {
@@ -251,45 +252,36 @@ export default function Home() {
             />
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                ...rooms.deluxe,
-                image: '/images/rooms/deluxe-room.jpeg',
-              },
-              {
-                ...rooms.suite,
-                image: '/images/rooms/family-suite.jpeg',
-              },
-            ].map((room, index) => (
-              <AnimatedSection key={room.label} delay={index * 150}>
-                <div className="card-dark overflow-hidden group">
-                  <div className="relative h-64 overflow-hidden">
+          <div className="space-y-16">
+            <AnimatedSection>
+              <div className="card-dark overflow-hidden">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="relative h-72 lg:h-auto lg:min-h-[360px] overflow-hidden group">
                     <img
-                      src={room.image}
-                      alt={room.label}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      src={rooms.deluxe.image}
+                      alt={rooms.deluxe.label}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-4 right-4 bg-amber-600 text-dark-900 px-4 py-2 rounded-sm font-semibold">
-                      From Rs.{room.price.toLocaleString()}/night
+                      From Rs.{rooms.deluxe.price.toLocaleString()}/night
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 lg:p-8 flex flex-col justify-center">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className="text-amber-500 text-sm">{room.count} rooms</span>
+                      <span className="text-amber-500 text-sm">{rooms.deluxe.count} rooms</span>
                       <span className="text-cream-500">|</span>
                       <span className="text-cream-400 text-sm flex items-center gap-1">
-                        <Users className="w-4 h-4" /> {room.capacity} guests
+                        <Users className="w-4 h-4" /> {rooms.deluxe.capacity} guests
                       </span>
                     </div>
-                    <h3 className="text-2xl font-serif text-cream-100 mb-2">{room.label}</h3>
-                    <p className="text-cream-400 text-sm mb-6">{room.description}</p>
+                    <h3 className="text-2xl font-serif text-cream-100 mb-2">{rooms.deluxe.label}</h3>
+                    <p className="text-cream-400 text-sm mb-6">{rooms.deluxe.description}</p>
                     <div className="flex items-center gap-4">
                       <Link to="/stays" className="btn-primary text-sm py-3 px-6">
                         View Rooms
                       </Link>
                       <button
-                        onClick={() => openWhatsApp(`Hello! I'm interested in booking a ${room.label} at Dimension 11:11.`)}
+                        onClick={() => openWhatsApp(`Hello! I'm interested in booking a Deluxe Room at Dimension 11:11.`)}
                         className="btn-secondary text-sm py-3 px-6"
                       >
                         Book Now
@@ -297,8 +289,53 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </AnimatedSection>
-            ))}
+                <div className="p-6 pt-0 lg:p-8 lg:pt-0">
+                  <ImageCarousel images={rooms.deluxe.gallery.slice(0, 8)} title="Deluxe Room" />
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={150}>
+              <div className="card-dark overflow-hidden">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="relative h-72 lg:h-auto lg:min-h-[360px] overflow-hidden group lg:order-2">
+                    <img
+                      src={rooms.suite.image}
+                      alt={rooms.suite.label}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 right-4 bg-amber-600 text-dark-900 px-4 py-2 rounded-sm font-semibold">
+                      From Rs.{rooms.suite.price.toLocaleString()}/night
+                    </div>
+                  </div>
+                  <div className="p-6 lg:p-8 flex flex-col justify-center lg:order-1">
+                    <div className="flex items-center gap-4 mb-4">
+                      <span className="text-amber-500 text-sm">{rooms.suite.count} suites</span>
+                      <span className="text-cream-500">|</span>
+                      <span className="text-cream-400 text-sm flex items-center gap-1">
+                        <Users className="w-4 h-4" /> {rooms.suite.capacity} guests
+                      </span>
+                    </div>
+                    <h3 className="text-2xl font-serif text-cream-100 mb-2">{rooms.suite.label}</h3>
+                    <p className="text-cream-400 text-sm mb-6">{rooms.suite.description}</p>
+                    <div className="flex items-center gap-4">
+                      <Link to="/stays" className="btn-primary text-sm py-3 px-6">
+                        View Rooms
+                      </Link>
+                      <button
+                        onClick={() => openWhatsApp(`Hello! I'm interested in booking a Family Suite at Dimension 11:11.`)}
+                        className="btn-secondary text-sm py-3 px-6"
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6 pt-0 lg:p-8 lg:pt-0">
+                  <ImageCarousel images={rooms.suite.gallery} title="Family Suite" />
+                </div>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
