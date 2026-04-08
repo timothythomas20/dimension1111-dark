@@ -31,10 +31,10 @@ export default function Adventures() {
   };
 
   const trekImages: { [key: string]: string } = {
-    kheerganga: '/images/treks/kheerganga.png',
+    kheerganga: '/images/treks/kheerganga.jpg',
     sarpass: '/images/treks/sarpass.jpg',
     devaropa: '/images/treks/devaropa.webp',
-    pinbhaba: '/images/treks/pinbhaba.png',
+    pinbhaba: '/images/treks/pinbhaba.jpg',
     shrikhand: '/images/treks/shrikhand.jpg',
     pinparvati: '/images/treks/pinparvati.jpg',
   };
