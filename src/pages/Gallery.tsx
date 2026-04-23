@@ -19,20 +19,20 @@ const galleryImages = [
   { src: '/new-images/lounge-new/l4.jpeg', category: 'lounge', alt: 'Lounge area' },
   { src: '/new-images/lounge-new/l5.jpeg', category: 'lounge', alt: 'Lounge area' },
   { src: '/images/views/valley-panorama.jpeg', category: 'views', alt: 'Valley panorama' },
-  { src: '/images/rooms/deluxe-room.jpeg', category: 'rooms', alt: 'Deluxe room interior' },
+  { src: '/new-images/rooms/deluxe-room-new/WhatsApp_Image_2026-02-27_at_09.29.17_(1).jpeg', category: 'rooms', alt: 'Deluxe room interior' },
   { src: '/images/experiences/bonfire.jpeg', category: 'bonfire', alt: 'Evening bonfire' },
   { src: '/images/cafe/cafe-food.jpeg', category: 'cafe', alt: 'Cafe food' },
   { src: '/images/views/mountain-sunrise.jpeg', category: 'views', alt: 'Mountain sunrise' },
   { src: '/images/experiences/trekking-trail.jpeg', category: 'treks', alt: 'Trekking trail' },
-  { src: '/images/rooms/room-with-view.jpeg', category: 'rooms', alt: 'Room with view' },
+  { src: '/new-images/rooms/deluxe-room-new/WhatsApp_Image_2026-02-27_at_09.30.37.jpeg', category: 'rooms', alt: 'Room with view' },
   { src: '/images/views/misty-mountains.jpeg', category: 'views', alt: 'Misty mountains' },
   { src: '/images/cafe/cafe-ambiance.jpeg', category: 'cafe', alt: 'Cafe ambiance' },
   { src: '/images/experiences/hiking-mountains.jpeg', category: 'treks', alt: 'Hiking in mountains' },
-  { src: '/images/rooms/family-suite.jpeg', category: 'rooms', alt: 'Family suite' },
+  { src: '/new-images/rooms/family-suite/WhatsApp_Image_2026-02-27_at_09.30.26.jpeg', category: 'rooms', alt: 'Family suite' },
   { src: '/images/experiences/pine-forest.jpeg', category: 'views', alt: 'Pine forest' },
-  { src: '/images/rooms/cozy-bedroom.jpeg', category: 'rooms', alt: 'Cozy bedroom' },
-  { src: '/images/rooms/room-details.jpeg', category: 'rooms', alt: 'Room details' },
-  { src: '/images/rooms/suite-interior.jpeg', category: 'rooms', alt: 'Suite interior' },
+  { src: '/new-images/rooms/deluxe-room-new/WhatsApp_Image_2026-02-27_at_09.30.57.jpeg', category: 'rooms', alt: 'Cozy bedroom' },
+  { src: '/new-images/rooms/family-suite/WhatsApp_Image_2026-02-27_at_09.30.27.jpeg', category: 'rooms', alt: 'Room details' },
+  { src: '/new-images/rooms/family-suite/WhatsApp_Image_2026-02-27_at_09.30.33.jpeg', category: 'rooms', alt: 'Suite interior' },
   { src: '/images/views/evening-sky.jpeg', category: 'views', alt: 'Evening sky' },
   { src: '/images/experiences/rooftop-yoga.jpeg', category: 'property', alt: 'Rooftop yoga' },
   { src: '/images/treks/kheerganga.jpg', category: 'treks', alt: 'Kheerganga trek' },
@@ -222,7 +222,7 @@ export default function Gallery() {
                 <div className="space-y-4">
                   <div className="aspect-[4/5] rounded-sm overflow-hidden">
                     <img
-                      src="/images/rooms/deluxe-room.jpeg"
+                      src="/new-images/rooms/deluxe-room-new/WhatsApp_Image_2026-02-27_at_09.30.58.jpeg"
                       alt="Room"
                       className="w-full h-full object-cover"
                     />

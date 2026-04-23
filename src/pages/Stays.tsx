@@ -416,7 +416,7 @@ export default function Stays() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/rooms/cozy-bedroom.jpeg"
+            src="/new-images/rooms/deluxe-room-new/zWhatsApp_Image_2026-02-27_at_09.30.41.jpeg"
             alt="Cozy room"
             className="w-full h-full object-cover"
           />

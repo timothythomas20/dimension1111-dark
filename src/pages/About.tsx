@@ -271,7 +271,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                image: '/images/rooms/deluxe-room.jpeg',
+                image: '/new-images/rooms/deluxe-room-new/WhatsApp_Image_2026-02-27_at_09.30.37_(1).jpeg',
                 title: 'Comfortable Rooms',
                 description: '7 unique accommodations with valley views',
               },

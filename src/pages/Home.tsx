@@ -130,7 +130,7 @@ export default function Home() {
                 title: 'Homestay Rooms',
                 description: 'Comfortable rooms with valley views, attached baths, and mountain hospitality',
                 link: '/stays',
-                image: '/images/rooms/deluxe-room.jpeg',
+                image: '/new-images/rooms/deluxe-room-new/WhatsApp_Image_2026-02-27_at_09.30.55_(1).jpeg',
               },
               {
                 icon: <Mountain className="w-10 h-10" />,
@@ -594,7 +594,7 @@ export default function Home() {
             {[
               '/images/views/misty-mountains.jpeg',
               '/images/views/mountain-sunrise.jpeg',
-              '/images/rooms/room-with-view.jpeg',
+              '/new-images/rooms/family-suite/WhatsApp_Image_2026-02-27_at_09.30.32_(1).jpeg',
               '/images/experiences/bonfire.jpeg',
               '/images/cafe/cafe-food.jpeg',
               '/images/views/valley-panorama.jpeg',
